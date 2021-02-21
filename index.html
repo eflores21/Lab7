@@ -84,8 +84,12 @@
       // The main difference from fetchOne() will be the URL you request from; check
       // the writeup to view the URL pattern for fetch one and fetch all
       function fetchAll() {
+<<<<<<< HEAD
         
         //use fetch api on endpoint value
+=======
+         //use fetch api on endpoint value
+>>>>>>> 632933d9c48e71e624e8da854fd94eb143992c32
         fetch(document.getElementById("endpoint").value)
           .then(response => {        
             if (!response.ok) {
@@ -107,11 +111,17 @@
       // The main difference from fetchAll() will be the URL you request from; check
       // the writeup to view the URL pattern for fetch one and fetch all
       function fetchOne() {
+<<<<<<< HEAD
         
         //fetching entry, appending id to endpoint value
         fetch(document.getElementById("endpoint").value + "/" + prompt("Enter record id"))
           .then(response => 
           {
+=======
+        //fetching entry, appending id to endpoint value
+        fetch(document.getElementById("endpoint").value + "/" + prompt("Enter record id"))
+          .then(response => {
+>>>>>>> 632933d9c48e71e624e8da854fd94eb143992c32
             if (!response.ok) {
               throw Error(response.statusText);
             }
@@ -124,7 +134,10 @@
           .catch(function(error) {
             output.innerHTML = error
           })
+<<<<<<< HEAD
 
+=======
+>>>>>>> 632933d9c48e71e624e8da854fd94eb143992c32
       }
 
       // This function should use fetch to create one entry in the given endpoint.
@@ -132,7 +145,11 @@
       // The main difference from updateRecord() will be the URL you send data to; check
       // the writeup to view the URL pattern for create and update
       function createRecord(arg) {
+<<<<<<< HEAD
   
+=======
+        
+>>>>>>> 632933d9c48e71e624e8da854fd94eb143992c32
         let title = document.getElementById("title").value;
         let author = document.getElementById("author").value;
         if(arg == 'show') {
@@ -153,7 +170,11 @@
             let output = document.getElementById("output");
             output.innerHTML = JSON.stringify(data);
           })
+<<<<<<< HEAD
         } 
+=======
+        }
+>>>>>>> 632933d9c48e71e624e8da854fd94eb143992c32
       }
 
       // This function should use fetch to update one existing entry in the given endpoint.
@@ -161,7 +182,11 @@
       // The main difference from createRecord() will be the URL you send data to; check
       // the writeup to view the URL pattern for create and update
       function updateRecord(arg) {
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 632933d9c48e71e624e8da854fd94eb143992c32
         let title = document.getElementById("title").value;
         let author = document.getElementById("author").value;
         let id = document.getElementById("recordID").value;
@@ -186,7 +211,10 @@
             let output = document.getElementById("output");
             output.innerHTML = JSON.stringify(data);
           })
+<<<<<<< HEAD
         }
+=======
+>>>>>>> 632933d9c48e71e624e8da854fd94eb143992c32
       }
 
       // This function should use fetch to delete one existing entry in the given endpoint.
@@ -195,7 +223,10 @@
       // request; check the writeup to view the URL pattern for get one and delete. THERE IS NO 
       // delete all, only delete one.
       function deleteRecord() {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 632933d9c48e71e624e8da854fd94eb143992c32
         //Using delete to create entry
         fetch(document.getElementById("endpoint").value + "/" + prompt("Enter record id"), 
         {
